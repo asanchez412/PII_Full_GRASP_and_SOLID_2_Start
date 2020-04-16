@@ -29,10 +29,10 @@ namespace Full_GRASP_And_SOLID.Library
         {
             string result = string.Empty;
             
-            result = $"Receta de {this.FinalProduct.Description}";
+            result = $"Receta de {this.FinalProduct.Description}" + Environment.NewLine;
             foreach (Step step in this.steps)
             {
-                result = result + $"{step.Quantity} de '{step.Input.Description}' " + $"usando '{step.Equipment.Description}' durante {step.Time}";
+                result = result + $"Se utilizan {step.Quantity} de {step.Input.Description} " + $"usando {step.Equipment.Description} durante {step.Time} segundos" + Environment.NewLine;
             }
             return result;
         }
