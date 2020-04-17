@@ -23,7 +23,13 @@ namespace Full_GRASP_And_SOLID.Library
         public void RemoveStep(Step step)
         {
             this.steps.Remove(step);
-        }
+        }   
+        
+        // se decidió reemplazar el método anterior con uno nuevo que almacena en una variable
+        // la información que la siguiente clase necesitará para continuar trabajando
+        // en este caso, imprimir.
+        // se utiliza expert dado que esta clase es la experta en información y capaz de
+        // otorgar toda la información necesaria
 
         public string GetTextToPrint()
         {

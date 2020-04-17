@@ -1,9 +1,10 @@
 using System;
-using System.Collections;
+
+// se agrega esta clase con el fin de seguir el principio SRP
 
 namespace Full_GRASP_And_SOLID.Library
 {
-    public class PrintRecipe
+    public class ConsolePrinter
     {
         public static void PrintRecipes(Recipe recipe)
         {
